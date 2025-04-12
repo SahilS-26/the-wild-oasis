@@ -15,7 +15,7 @@ function AddCabin() {
       </Modal.Window>
 
       <Modal.Open opens="table">
-        <Button>Table</Button>
+        <Button>Show table</Button>
       </Modal.Open>
       <Modal.Window name="table">
         <CabinTable />
