@@ -88,8 +88,8 @@ function Row({ children }) {
   );
 }
 
-function Body({ children }) {
-  return <StyledBody>{children}</StyledBody>;
+function Body({ data, render }) {
+  return <StyledBody>{data.map(render)}</StyledBody>;
 }
 
 Table.Header = Header;
