@@ -49,8 +49,9 @@ function Filter({ filterField, options }) {
       {options.map((option) => (
         <FilterButton
           key={option.id}
-          active={option.value === currentFilter}
           onClick={() => handleClick(option.value)}
+          active={option.value === currentFilter}
+          disabled={option.value === currentFilter}
         >
           {option.name}
         </FilterButton>
