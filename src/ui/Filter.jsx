@@ -53,7 +53,7 @@ function Filter({ filterField, options }) {
           active={option.value === currentFilter}
           disabled={option.value === currentFilter}
         >
-          {option.name}
+          {option.name || option.label}
         </FilterButton>
       ))}
     </StyledFilter>
