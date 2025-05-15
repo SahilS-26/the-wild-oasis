@@ -117,6 +117,7 @@ export async function updateBooking(id, obj) {
     console.error(error);
     throw new Error("Booking could not be updated");
   }
+  console.log("Hook triggered");
   return data;
 }
 
